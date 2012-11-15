@@ -1,0 +1,5 @@
+.*.sw?
+.sass-cache
+*.tar.gz
+config.yaml
+tmp
