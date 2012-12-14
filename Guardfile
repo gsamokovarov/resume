@@ -1,3 +1,3 @@
 guard :shell do
-  watch(/index.slim/) { system 'rake' }
+  watch(/index.slim/) { system 'make index.html' }
 end
