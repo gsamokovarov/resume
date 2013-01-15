@@ -1,218 +1,219 @@
 doctype 5
 html
-  title Genadi Samokovarov :: Resume
-  link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'
-  sass:
-    body, div, p, h1, h2, h3, ul, li, pre
-      margin: 0
-      padding: 0
+  head
+    title Genadi Samokovarov :: Resume
+    link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'
+    sass:
+      body, div, p, h1, h2, h3, ul, li, pre
+        margin: 0
+        padding: 0
 
-    body
-      height: 100%
-
-    h1, h2, h3
-      font-size: 100%
-      font-weight: bold
-
-    a
-      text-decoration: none
-      &:hover
-        text-decoration: none
-
-    *
-      outline: none
-  sass:
-    body
-      border-top: 4px solid #54EDC4
-
-    #container
-      font-family: Inconsolata, Consolas, Andale Mono, Courier, monospace
-      font-size: 16px
-      color: #364347
-      margin: 0 auto
-      margin-top: 24px
-      margin-bottom: 24px
-      max-width: 960px
+      body
+        height: 100%
 
       h1, h2, h3
-        margin-top: 0.5em
-        margin-bottom: 0.5em
-
-      h1
-        font-size: 32px
-
-      h2
-        font-size: 24px
-
-      h3
-        font-size: 19px
+        font-size: 100%
+        font-weight: bold
 
       a
-        color: #BD304E
+        text-decoration: none
         &:hover
-          color: #E5928A
+          text-decoration: none
 
-      li
-        height: 19px
+      *
+        outline: none
+    sass:
+      body
+        border-top: 4px solid #54EDC4
 
-      .header
-        h1
-          color: #34A4CF
-          text-align: center
+      #container
+        font-family: Inconsolata, Consolas, Andale Mono, Courier, monospace
+        font-size: 16px
+        color: #364347
+        margin: 0 auto
+        margin-top: 24px
+        margin-bottom: 24px
+        max-width: 960px
 
-        .links
-          clear: right
-          .github
-            text-align: left
-          .email
-            text-align: right
-            float: right
-
-      .summary
-        h3
-          em
-            font-size: 17px
-
-        em
-          color: #6F8A94
-
-        p
-          font-size: 16px
-          text-align: justify
+        h1, h2, h3
           margin-top: 0.5em
           margin-bottom: 0.5em
 
-        ul
-          padding-left: 2.5em
+        h1
+          font-size: 32px
+
+        h2
+          font-size: 24px
+
+        h3
+          font-size: 19px
+
+        a
+          color: #BD304E
+          &:hover
+            color: #E5928A
+
+        li
+          height: 19px
+
+        .header
+          h1
+            color: #34A4CF
+            text-align: center
+
+          .links
+            clear: right
+            .github
+              text-align: left
+            .email
+              text-align: right
+              float: right
+
+        .summary
+          h3
+            em
+              font-size: 17px
+
+          em
+            color: #6F8A94
+
+          p
+            font-size: 16px
+            text-align: justify
+            margin-top: 0.5em
+            margin-bottom: 0.5em
+
+          ul
+            padding-left: 2.5em
+
+          .break
+            page-break-after: always
+
+  body
+    #container
+      .header
+        h1 Genadi Samokovarov
+
+        .links
+          a.github href="https://github.com/gsamokovarov" github.com/gsamokovarov
+          a.email href="mailto:gsamokovarov@gmail.com" gsamokovarov@gmail.com
+
+      .summary
+        markdown:
+          Hello, my name is Genadi and I like building stuff. Be it [software development][github] or
+          [electronic music][soundcloud], I try to dive-in everything that makes me excited.
+
+          _<3_ [Python][python]_,_ [Ruby][ruby]_,_ [JavaScript][javascript]_,_ [Linux][ubuntu] _&_ [Git][git].
+
+          [python]: http://www.python.org/
+          [ruby]: http://www.ruby-lang.org/
+          [javascript]: https://www.google.com/search?q=JavaScript
+          [ubuntu]: http://www.ubuntu.com/
+          [git]: http://git-scm.com/
+
+          [github]: https://github.com/gsamokovarov
+          [soundcloud]: https://soundcloud.com/gsamokovarov
+
+          Experience
+          ----------
+
+          ### MTS, [VMware][vmware] _[10.2011, ...]_
+            * Developed Django testing framework, creating testing databases across multiple-databases.
+            * Developed internal status dashboard, monitoring the health of the Release Engineering services.
+            * Worked with different groups for the development of health checks for their infrastructure.
+            * Improved the performance of the Release Engineering infrastructure charts generation.
+            * Improved the performance of the dynamic Build machines provisioning.
+
+          _/ Python, Django, JavaScript, Backbone, Puppet, Perforce, Git /_
+
+          ### Software Engineer, [Melon][melon] _[03.2011, 09.2011]_
+            * Developed high-level black-box testing framework in Python and C++ for [Cyberarts][cyberarts].
+            * Supported a legacy code base built on Classic ASP with VisualBasic Script for [Restaurant Guide][restaurant-guide].
+
+          _/ Python, ASP, VisualBasic Script, .NET, Subversion /_
+
+          [melon]: http://www.melontech.com/
+          [cyberarts]: http://www.cyberarts.com/
+          [restaurant-guide]: http://www.restaurant-guide.com/
+
+          ### Intern MTS, [VMware][vmware] _[07.2010, 01.2011]_
+            * Developed image recording frontend to generate CD releases for customers.
+            * Developed a Python API binding for [RImage][rimage] robotic machines web services.
+            * Developed a dynamic changelog giving the changes between two product builds.
+
+          _/ Python, Django, Suds, P4Python, PySVN, Perforce /_
+
+          [vmware]: http://vmware.com/
+          [rimage]: http://www.rimage.com/
+
+          ### Software Engineer, N-Team _[09.2009, 06.2010]_
+            * Developed a windows installer for an in house project with Python and WIX.
+            * Developed fiscal printer communication software in Python for [Cashterminal][cashterminal].
+            * Developed communication software for [Vivacom][vivacom], the first partner for [Cashterminal][cashterminal].
+            * Increased the front end performance for [Cashterminal][cashterminal], by developing a caching system.
+            * Refactored all of the frontend code for [Cashterminal][cashterminal].
+
+          _/ Python, Django, wxPython, PyGame /_
+
+          [cashterminal]: http://www.cashterminal.eu/en/
+          [vivacom]: http://vivacom.bg/en/
 
         .break
-          page-break-after: always
 
-body
-  #container
-    .header
-      h1 Genadi Samokovarov
+        markdown:
+          Open Source
+          -----------
 
-      .links
-        a.github href="https://github.com/gsamokovarov" github.com/gsamokovarov
-        a.email href="mailto:gsamokovarov@gmail.com" gsamokovarov@gmail.com
+          I love open source software and try to contribute back to it as much as I can. I have contributed to
+          [Backbone][backbone], [Spine][spine], [Underscore][underscore] and [Puppet][puppet], among others.
+          Besides my contributions, I have a couple of [open source projects][github] of my own:
 
-    .summary
-      markdown:
-        Hello, my name is Genadi and I like building stuff. Be it [software development][github] or
-        [electronic music][soundcloud], I try to dive-in everything that makes me excited.
+          [backbone]: https://github.com/documentcloud/backbone
+          [underscore]: https://github.com/documentcloud/backbone
+          [spine]: https://github.com/maccman/spine
+          [puppet]: https://github.com/puppetlabs/puppet
 
-        _<3_ [Python][python]_,_ [Ruby][ruby]_,_ [JavaScript][javascript]_,_ [Linux][ubuntu] _&_ [Git][git].
+          ### [Backbone Mediator][backbone-mediator] _Dead simple Mediator for Backbone_
+            * Minimalistic mediator implementation building on top of the existing Backbone events.
 
-        [python]: http://www.python.org/
-        [ruby]: http://www.ruby-lang.org/
-        [javascript]: https://www.google.com/search?q=JavaScript
-        [ubuntu]: http://www.ubuntu.com/
-        [git]: http://git-scm.com/
+          ### [Simple Machine][simple-machine] _Simple state machine for Node and the Browser_
+            * Minimalistic state machine implementation in CoffeeScript.
 
-        [github]: https://github.com/gsamokovarov
-        [soundcloud]: https://soundcloud.com/gsamokovarov
+          ### [Holmsie][holmsie] _Simple HTML(5) problems detector for Mozilla Firefox_
+            * Mozilla Firefox plugin for detecting problems with HTML(5) markup.
 
-        Experience
-        ----------
+          ### [Pygmentize Me][pygmentize.me] _Your friendly highlighting service_
+            * Simple highlighting web service built in [plush][] with bindings for [node.js][cobalt] and [ruby][carmine].
 
-        ### MTS, [VMware][vmware] _[10.2011, ...]_
-          * Developed Django testing framework, creating testing databases across multiple-databases.
-          * Developed internal status dashboard, monitoring the health of the Release Engineering services.
-          * Worked with different groups for the development of health checks for their infrastructure.
-          * Improved the performance of the Release Engineering infrastructure charts generation.
-          * Improved the performance of the dynamic Build machines provisioning.
+          ### [Plush][plush] _Python's most fluffy web framework_
+            * Asynchronous micro web framework with a simple, DSL-like interface.
 
-        _/ Python, Django, JavaScript, Backbone, Puppet, Perforce, Git /_
+          ### [Moodswing][moodswing] _Node.js testing framework for that time of the software development cycle_
+            * CoffeeScript assertions DSL in [Literate Programming][literate-programming] style.
 
-        ### Software Engineer, [Melon][melon] _[03.2011, 09.2011]_
-          * Developed high-level black-box testing framework in Python and C++ for [Cyberarts][cyberarts].
-          * Supported a legacy code base built on Classic ASP with VisualBasic Script for [Restaurant Guide][restaurant-guide].
+          [moodswing]: https://github.com/gsamokovarov/moodswing
+          [plush]: https://github.com/gsamokovarov/plush
+          [pygmentize.me]: https://github.com/gsamokovarov/pygmentize.me
+          [carmine]: https://github.com/gsamokovarov/carmine
+          [cobalt]: https://github.com/gsamokovarov/cobalt
+          [holmsie]: https://github.com/gsamokovarov/holmsie
+          [simple-machine]: https://github.com/gsamokovarov/simple-machine
+          [backbone-mediator]: https://github.com/gsamokovarov/backbone-mediator
 
-        _/ Python, ASP, VisualBasic Script, .NET, Subversion /_
+          [github]: https://github.com/gsamokovarov
+          [literate-programming]: http://en.wikipedia.org/wiki/Literate_programming
 
-        [melon]: http://www.melontech.com/
-        [cyberarts]: http://www.cyberarts.com/
-        [restaurant-guide]: http://www.restaurant-guide.com/
+          _For full listing, checkout my [github][] profile._
 
-        ### Intern MTS, [VMware][vmware] _[07.2010, 01.2011]_
-          * Developed image recording frontend to generate CD releases for customers.
-          * Developed a Python API binding for [RImage][rimage] robotic machines web services.
-          * Developed a dynamic changelog giving the changes between two product builds.
+          Education
+          ---------
 
-        _/ Python, Django, Suds, P4Python, PySVN, Perforce /_
+          ### Masters of Software Technologies, [Sofia University][uni-sofia] _[10.2012, ...]_
+            * Helped out the **[Programming Ruby][fmi-ruby]** with website features and fixes.
 
-        [vmware]: http://vmware.com/
-        [rimage]: http://www.rimage.com/
+          ### Bachelor of Software Engineering, [Sofia University][uni-sofia] _[10.2008, 07.2012]_
+            * Lectured the JavaScript part of the **[Web Development with PHP][php-dev]** course for 2 years.
 
-        ### Software Engineer, N-Team _[09.2009, 06.2010]_
-          * Developed a windows installer for an in house project with Python and WIX.
-          * Developed fiscal printer communication software in Python for [Cashterminal][cashterminal].
-          * Developed communication software for [Vivacom][vivacom], the first partner for [Cashterminal][cashterminal].
-          * Increased the front end performance for [Cashterminal][cashterminal], by developing a caching system.
-          * Refactored all of the frontend code for [Cashterminal][cashterminal].
-
-        _/ Python, Django, wxPython, PyGame /_
-
-        [cashterminal]: http://www.cashterminal.eu/en/
-        [vivacom]: http://vivacom.bg/en/
-
-      .break
-
-      markdown:
-        Open Source
-        -----------
-
-        I love open source software and try to contribute back to it as much as I can. I have contributed to
-        [Backbone][backbone], [Spine][spine], [Underscore][underscore] and [Puppet][puppet], among others.
-        Besides my contributions, I have a couple of [open source projects][github] of my own:
-
-        [backbone]: https://github.com/documentcloud/backbone
-        [underscore]: https://github.com/documentcloud/backbone
-        [spine]: https://github.com/maccman/spine
-        [puppet]: https://github.com/puppetlabs/puppet
-
-        ### [Backbone Mediator][backbone-mediator] _Dead simple Mediator for Backbone_
-          * Minimalistic mediator implementation building on top of the existing Backbone events.
-
-        ### [Simple Machine][simple-machine] _Simple state machine for Node and the Browser_
-          * Minimalistic state machine implementation in CoffeeScript.
-
-        ### [Holmsie][holmsie] _Simple HTML(5) problems detector for Mozilla Firefox_
-          * Mozilla Firefox plugin for detecting problems with HTML(5) markup.
-
-        ### [Pygmentize Me][pygmentize.me] _Your friendly highlighting service_
-          * Simple highlighting web service built in [plush][] with bindings for [node.js][cobalt] and [ruby][carmine].
-
-        ### [Plush][plush] _Python's most fluffy web framework_
-          * Asynchronous micro web framework with a simple, DSL-like interface.
-
-        ### [Moodswing][moodswing] _Node.js testing framework for that time of the software development cycle_
-          * CoffeeScript assertions DSL in [Literate Programming][literate-programming] style.
-
-        [moodswing]: https://github.com/gsamokovarov/moodswing
-        [plush]: https://github.com/gsamokovarov/plush
-        [pygmentize.me]: https://github.com/gsamokovarov/pygmentize.me
-        [carmine]: https://github.com/gsamokovarov/carmine
-        [cobalt]: https://github.com/gsamokovarov/cobalt
-        [holmsie]: https://github.com/gsamokovarov/holmsie
-        [simple-machine]: https://github.com/gsamokovarov/simple-machine
-        [backbone-mediator]: https://github.com/gsamokovarov/backbone-mediator
-
-        [github]: https://github.com/gsamokovarov
-        [literate-programming]: http://en.wikipedia.org/wiki/Literate_programming
-
-        _For full listing, checkout my [github][] profile._
-
-        Education
-        ---------
-
-        ### Masters of Software Technologies, [Sofia University][uni-sofia] _[10.2012, ...]_
-          * Helped out the **[Programming Ruby][fmi-ruby]** with website features and fixes.
-
-        ### Bachelor of Software Engineering, [Sofia University][uni-sofia] _[10.2008, 07.2012]_
-          * Lectured the JavaScript part of the **[Web Development with PHP][php-dev]** course for 2 years.
-
-        [uni-sofia]: http://www.uni-sofia.bg/eng/
-        [fmi-ruby]: http://fmi.ruby.bg/
-        [php-dev]: http://php.dev.bg/
+          [uni-sofia]: http://www.uni-sofia.bg/eng/
+          [fmi-ruby]: http://fmi.ruby.bg/
+          [php-dev]: http://php.dev.bg/
