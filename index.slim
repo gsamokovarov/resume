@@ -62,6 +62,10 @@ html
         .header
           h1
             text-align: center
+            .homepage
+              color: #364347
+              &:hover
+                color: #364347
 
           .links
             clear: right
@@ -102,7 +106,8 @@ html
   body
     #container
       .header
-        h1 Genadi Samokovarov
+        h1
+          a.homepage href="http://gsamokovarov.com" Genadi Samokovarov
 
         .links
           a.github href="https://github.com/gsamokovarov" github.com/gsamokovarov
