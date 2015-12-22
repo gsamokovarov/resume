@@ -62,9 +62,6 @@ html
           &:hover
             color: #E5928A
 
-        li
-          height: 19px
-
         code
           color: #A1898E
 
@@ -103,11 +100,11 @@ html
 
           ul
             padding-left: 2.5em
-            @media screen and (max-width: 820px)
-              li
-                display: inline-block
-                white-space: pre-wrap
-                margin-bottom: 0.5em
+            li
+              display: inline-block
+              height: 16px
+              line-height: 20px
+              margin-bottom: 0.5em
 
           .break
             page-break-after: always
@@ -147,9 +144,9 @@ html
 
           ### Software Engineer, Software Society _[09.2013, ...]_
           #### Ruby, Ruby on Rails, Puppet, JavaScript, Git
-            * Automated and scaled the infrastructure of [fidor.de].
+            * Automated, created test infrastructure and scaled [fidor.de].
             * Reworked and optimized core banking processes of [fidor.de].
-            * Implemented various feature requests for [fidor.de].
+            * Lead the development of an RESTful banking API at [api.fidor.de][fidor.de].
 
           [fidor.de]: https://www.fidor.de/
 
@@ -222,9 +219,6 @@ html
 
           ### [Backbone Coffee][backbone.coffee] _Rewrite of Backbone in CoffeeScript_
             * Cheeky rewrite of Backbone into CoffeeScript.
-
-          ### [Pygmentize Me][pygmentize.me] _Your friendly highlighting service_
-            * Simple highlighting web service built in [plush][] with bindings for [node.js][cobalt] and [ruby][carmine].
 
           ### [Plush][plush] _Python's most fluffy web framework_
             * Asynchronous micro web framework with a simple, DSL-like interface.
