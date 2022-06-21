@@ -100,11 +100,11 @@ html
 
           ul
             padding-left: 2.5em
-            li
-              display: inline-block
-              height: 16px
-              line-height: 20px
-              margin-bottom: 0.5em
+            @media screen and (max-width: 960px)
+              li
+                display: inline-block
+                line-height: 19px
+                margin-bottom: 0.5em
 
           .break
             page-break-after: always
@@ -125,13 +125,14 @@ html
 
       .summary
         markdown:
-          Hello, my name is Genadi and I like building stuff. Be it [software development][github] or
-          [electronic music][soundcloud], I dive into everything that makes me excited.
+          Hello, my name is Genadi and I like building things. Be it [software development][github], [events organization][balkanruby]
+          or [electronic music][soundcloud], I dive into everything that makes me excited.
 
-          _<3_ [Ruby][ruby]_,_ [Python][python]_,_ [JavaScript][javascript]_,_ [Linux][ubuntu] _&_ [Git][git].
+          I'm into [Ruby][ruby]_,_ [Golang][go]_,_ [JavaScript][javascript]_,_ [Linux][ubuntu] _&_ [Git][git].
 
           [ruby]: http://www.ruby-lang.org/
           [python]: http://www.python.org/
+          [golang]: https://golang.org/
           [javascript]: https://www.google.com/search?q=JavaScript
           [ubuntu]: http://www.ubuntu.com/
           [git]: http://git-scm.com/
@@ -142,7 +143,12 @@ html
           Experience
           ----------
 
-          ### Software Engineer, Software Society _[09.2013, ...]_
+          ### Software Development, Learn Capital _[03.2016, 09.2018]_
+          #### Ruby, Ruby on Rails, Golang, Puppet, Ansible
+            * Lead the backend development and infrastructure automation for https://browniepoints.com in [Ruby on Rails][rails].
+            * Lead the backend for https://rhyme.com in [Golang][go]
+
+          ### Software Engineer, Software Society _[09.2013, 02.2016]_
           #### Ruby, Ruby on Rails, Puppet, JavaScript, Git
             * Automated, created test infrastructure and scaled [fidor.de].
             * Reworked and optimized core banking processes of [fidor.de].
